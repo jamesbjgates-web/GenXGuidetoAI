@@ -1,25 +1,20 @@
-# Gen X Guide to AI website
+# Gen X Guide to AI — Website v2
 
-Static website for https://genxguidetoai.com
+Static responsive website for https://genxguidetoai.com
 
 ## Files
-- `index.html` — homepage
-- `styles.css` — responsive design
-- `script.js` — mobile menu
-- `assets/logo.png` — site logo
-- `assets/banner.png` — hero banner
+- `index.html`
+- `styles.css`
+- `script.js`
+- `assets/logo.png`
+- `assets/banner.png`
+- `.cpanel.yml` remains in the GitHub repository root and does not need changing.
 
-## Upload to GitHub
-Upload the contents of this folder to the root of the `GenXGuideToAI` repository and commit to your default branch.
+## Update workflow
+1. Replace `index.html`, `styles.css`, `script.js` in the GitHub repository.
+2. Commit to `main`.
+3. In cPanel Git Version Control, choose **Update from Remote**.
+4. Choose **Deploy HEAD Commit**.
+5. Hard-refresh the website (Ctrl+F5 on desktop) if the old CSS is cached.
 
-## HostPapa / cPanel deployment
-Your cPanel clone can stay at:
-`/home/genxguidetoai/repositories/GenXGuidetoAI`
-
-The public website document root is:
-`/home/genxguidetoai/public_html`
-
-For the first deployment, copy the website files from the cloned repository to `public_html`. Do not expose the repository's `.git` directory in the public web root.
-
-## Contact
-hello@genxguidetoai.com
+This v2 deliberately does not use the banner as a giant full-screen background. It uses it as framed artwork so the page remains legible and the layout behaves properly at desktop and mobile sizes.
