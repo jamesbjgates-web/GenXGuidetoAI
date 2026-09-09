@@ -1,23 +1,9 @@
-# Gen X Guide to AI
+# Gen X Guide to AI — GitHub/cPanel package v3
 
-GitHub/cPanel deployment package for the Gen X Guide to AI website.
+This package is ready to place at the root of the existing GitHub repository.
 
-## Deploy
+The homepage uses the approved James + GPT Stockport office artwork as the full-width opening hero. The HTML navigation is overlaid at the top right on desktop: WATCH / CHALLENGE US / ASSOCIATES / ABOUT. The remaining site content begins below the hero image.
 
-1. Upload the contents of this folder to the root of the GitHub repository.
-2. Commit and push to the branch configured in cPanel Git Version Control.
-3. In cPanel, update from remote and run **Deploy HEAD Commit**.
-4. `.cpanel.yml` copies the live site files into `public_html`.
+Deployment is handled by `.cpanel.yml` to `/home/genxguidetoai/public_html/`.
 
-## Main files
-
-- `index.html` — homepage
-- `challenge.html` — Challenge Us page
-- `thanks.html` — form confirmation page
-- `styles.css` — shared styling
-- `submit_challenge.php` — Challenge Us form handler
-- `assets/` — images and video
-
-## Before public launch
-
-Test the Challenge Us form on the live server and confirm mail delivery to `hello@genxguidetoai.com`.
+Before making the Challenge Us form public, test PHP `mail()` on the live host and add the final privacy/permission wording.

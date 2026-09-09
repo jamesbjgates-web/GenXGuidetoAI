@@ -1,8 +1,11 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/genxguidetoai/public_html/
+    - export DEPLOYPATH=/home/$USER/public_html/
+    - /bin/mkdir -p $DEPLOYPATH/assets
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp challenge.html $DEPLOYPATH
+    - /bin/cp thanks.html $DEPLOYPATH
     - /bin/cp styles.css $DEPLOYPATH
-    - /bin/cp script.js $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp submit_challenge.php $DEPLOYPATH
+    - /bin/cp -R assets/. $DEPLOYPATH/assets/
