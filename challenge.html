@@ -18,53 +18,69 @@
     </nav>
   </header>
 
-  <main class="challenge-page">
-    <section class="challenge-hero-small">
-      <p class="eyebrow">CHALLENGE US</p>
-      <h1>GOT A PROBLEM?<br>RECKON AI COULD HELP?</h1>
-      <p>Something annoying you? Something taking far too long? Got an idea but no idea whether AI could actually make it work?</p>
-      <p class="lead">THROW IT AT JAMES + GPT.</p>
+  <main class="challenge-page-redesign">
+    <section class="challenge-visual-hero">
+      <img class="challenge-bg" src="assets/home-hero.png" alt="James and GPT in the Gen X Guide studio">
+      <div class="challenge-overlay"></div>
+      <div class="challenge-message">
+        <p class="eyebrow">CHALLENGE US</p>
+        <h1>GOT A PROBLEM?<br>RECKON AI COULD HELP?</h1>
+        <p class="throw-line">THROW IT AT JAMES + GPT.</p>
+        <div class="challenge-banter-grid">
+          <div class="challenge-bubble james-bubble"><strong>JAMES:</strong> “I love it... oh, you know the rest. We don't want a copyright strike.”</div>
+          <div class="challenge-bubble gpt-bubble"><strong>GPT:</strong> “Apparently mine's trademarked. What a pity.”</div>
+        </div>
+        <p class="challenge-kicker"><strong>NO VAN. NO EXPLOSIONS.</strong><br>JUST ONE GEN XER AND AN AI WITH A WORRYING DEPENDENCE ON CAPPUCCINOS.</p>
+      </div>
     </section>
 
-    <section class="form-shell">
-      <form class="challenge-form" action="submit_challenge.php" method="post" enctype="multipart/form-data">
-        <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+    <section class="challenge-form-section">
+      <div class="form-intro">
+        <p class="eyebrow">RIGHT. WHAT HAVE YOU GOT?</p>
+        <h2>TELL US THE PROBLEM.</h2>
+        <p>Something annoying you? Something taking far too long? Got an idea but no idea whether AI could actually make it work?</p>
+      </div>
 
-        <label>What should we call you?
-          <input name="name" type="text" required maxlength="80" placeholder="First name is fine">
-        </label>
+      <div class="form-shell">
+        <form class="challenge-form" action="submit_challenge.php" method="post" enctype="multipart/form-data">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
 
-        <label>Where are you? <span>(optional)</span>
-          <input name="location" type="text" maxlength="100" placeholder="Town / city / country">
-        </label>
+          <label>What should we call you?
+            <input name="name" type="text" required maxlength="80" placeholder="First name is fine">
+          </label>
 
-        <label>What's the problem?
-          <textarea name="problem" rows="7" required maxlength="5000" placeholder="Tell us in your own words. Don't worry about making it sound clever."></textarea>
-        </label>
+          <label>Where are you? <span>(optional)</span>
+            <input name="location" type="text" maxlength="100" placeholder="Town / city / country">
+          </label>
 
-        <label>What would a good result look like?
-          <textarea name="outcome" rows="4" required maxlength="2500" placeholder="What would make you say: yep, that's sorted?"></textarea>
-        </label>
+          <label>What's the problem?
+            <textarea name="problem" rows="7" required maxlength="5000" placeholder="Tell us in your own words. Don't worry about making it sound clever."></textarea>
+          </label>
 
-        <label>Anything you want to show us? <span>(optional, max 10MB total)</span>
-          <input name="files[]" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.webp,.mp3,.m4a,.mp4">
-        </label>
+          <label>What would a good result look like?
+            <textarea name="outcome" rows="4" required maxlength="2500" placeholder="What would make you say: yep, that's sorted?"></textarea>
+          </label>
 
-        <fieldset>
-          <legend>Can we feature your challenge?</legend>
-          <label class="radio"><input type="radio" name="permission" value="name_location" required> Yes — you can use my first name and general location.</label>
-          <label class="radio"><input type="radio" name="permission" value="anonymous"> Yes — but keep me anonymous.</label>
-          <label class="radio"><input type="radio" name="permission" value="ask_first"> Maybe — ask me before you use anything.</label>
-          <label class="radio"><input type="radio" name="permission" value="private"> No — keep this private. I'd still like to know if you can help.</label>
-        </fieldset>
+          <label>Anything you want to show us? <span>(optional, max 10MB total)</span>
+            <input name="files[]" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.webp,.mp3,.m4a,.mp4">
+          </label>
 
-        <label>Email address
-          <input name="email" type="email" required maxlength="160" placeholder="So we can get back to you">
-        </label>
-        <p class="form-note">We won't start filling your inbox with shite. If your challenge looks like something we can tackle, we'll get in touch.</p>
+          <fieldset>
+            <legend>Can we feature your challenge?</legend>
+            <label class="radio"><input type="radio" name="permission" value="name_location" required> Yes — you can use my first name and general location.</label>
+            <label class="radio"><input type="radio" name="permission" value="anonymous"> Yes — but keep me anonymous.</label>
+            <label class="radio"><input type="radio" name="permission" value="ask_first"> Maybe — ask me before you use anything.</label>
+            <label class="radio"><input type="radio" name="permission" value="private"> No — keep this private. I'd still like to know if you can help.</label>
+          </fieldset>
 
-        <button class="btn btn-primary btn-large" type="submit">THROW IT AT US →</button>
-      </form>
+          <label>Email address
+            <input name="email" type="email" required maxlength="160" placeholder="So we can get back to you">
+          </label>
+          <p class="form-note">We won't start filling your inbox with shite. If your challenge looks like something we can tackle, we'll get in touch.</p>
+
+          <button class="btn btn-primary btn-large" type="submit">THROW IT AT US →</button>
+        </form>
+      </div>
     </section>
   </main>
 
