@@ -1,13 +1,9 @@
-# Gen X Guide to AI — GitHub/cPanel build v4
+# Gen X Guide to AI — GitHub/cPanel package v3
 
-This package is ready to place in the root of the existing GitHub repository used for cPanel deployment.
+This package is ready to place at the root of the existing GitHub repository.
 
-## What changed in v4
-- Homepage hero uses the exact approved James + GPT image supplied by James. It is not regenerated.
-- `Who the hell are James + GPT?` is now a graphical character introduction using crops from that exact approved image, with live HTML text beside each character.
-- `Associates` keeps clean tool cards, then a separate affiliate panel with GPT and the coffee quote in an HTML speech bubble.
-- `Challenge Us` is rebuilt as a programme-style visual page using the approved hero image as its background; the duplicated poster graphic has been removed.
-- Challenge form and PHP submission handler remain included.
+The homepage uses the approved James + GPT Stockport office artwork as the full-width opening hero. The HTML navigation is overlaid at the top right on desktop: WATCH / CHALLENGE US / ASSOCIATES / ABOUT. The remaining site content begins below the hero image.
 
-## Deploy
-Unzip and place the contents of this folder directly in the repository root, commit, push, then deploy using the existing cPanel Git workflow.
+Deployment is handled by `.cpanel.yml` to `/home/genxguidetoai/public_html/`.
+
+Before making the Challenge Us form public, test PHP `mail()` on the live host and add the final privacy/permission wording.
