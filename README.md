@@ -1,20 +1,23 @@
-# Gen X Guide to AI — Website v2
+# Gen X Guide to AI
 
-Static responsive website for https://genxguidetoai.com
+GitHub/cPanel deployment package for the Gen X Guide to AI website.
 
-## Files
-- `index.html`
-- `styles.css`
-- `script.js`
-- `assets/logo.png`
-- `assets/banner.png`
-- `.cpanel.yml` remains in the GitHub repository root and does not need changing.
+## Deploy
 
-## Update workflow
-1. Replace `index.html`, `styles.css`, `script.js` in the GitHub repository.
-2. Commit to `main`.
-3. In cPanel Git Version Control, choose **Update from Remote**.
-4. Choose **Deploy HEAD Commit**.
-5. Hard-refresh the website (Ctrl+F5 on desktop) if the old CSS is cached.
+1. Upload the contents of this folder to the root of the GitHub repository.
+2. Commit and push to the branch configured in cPanel Git Version Control.
+3. In cPanel, update from remote and run **Deploy HEAD Commit**.
+4. `.cpanel.yml` copies the live site files into `public_html`.
 
-This v2 deliberately does not use the banner as a giant full-screen background. It uses it as framed artwork so the page remains legible and the layout behaves properly at desktop and mobile sizes.
+## Main files
+
+- `index.html` — homepage
+- `challenge.html` — Challenge Us page
+- `thanks.html` — form confirmation page
+- `styles.css` — shared styling
+- `submit_challenge.php` — Challenge Us form handler
+- `assets/` — images and video
+
+## Before public launch
+
+Test the Challenge Us form on the live server and confirm mail delivery to `hello@genxguidetoai.com`.

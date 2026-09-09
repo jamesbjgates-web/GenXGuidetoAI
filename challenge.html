@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Challenge James + GPT with a real problem or idea.">
+  <title>Challenge Us | Gen X Guide to AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-main">GEN X GUIDE</span><span class="brand-sub">TO AI</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html#watch">WATCH</a>
+      <a href="challenge.html" aria-current="page">CHALLENGE US</a>
+      <a href="index.html#associates">ASSOCIATES</a>
+      <a href="index.html#about">ABOUT</a>
+    </nav>
+  </header>
+
+  <main class="challenge-page">
+    <section class="challenge-hero-small">
+      <p class="eyebrow">CHALLENGE US</p>
+      <h1>GOT A PROBLEM?<br>RECKON AI COULD HELP?</h1>
+      <p>Something annoying you? Something taking far too long? Got an idea but no idea whether AI could actually make it work?</p>
+      <p class="lead">THROW IT AT JAMES + GPT.</p>
+    </section>
+
+    <section class="form-shell">
+      <form class="challenge-form" action="submit_challenge.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+
+        <label>What should we call you?
+          <input name="name" type="text" required maxlength="80" placeholder="First name is fine">
+        </label>
+
+        <label>Where are you? <span>(optional)</span>
+          <input name="location" type="text" maxlength="100" placeholder="Town / city / country">
+        </label>
+
+        <label>What's the problem?
+          <textarea name="problem" rows="7" required maxlength="5000" placeholder="Tell us in your own words. Don't worry about making it sound clever."></textarea>
+        </label>
+
+        <label>What would a good result look like?
+          <textarea name="outcome" rows="4" required maxlength="2500" placeholder="What would make you say: yep, that's sorted?"></textarea>
+        </label>
+
+        <label>Anything you want to show us? <span>(optional, max 10MB total)</span>
+          <input name="files[]" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.webp,.mp3,.m4a,.mp4">
+        </label>
+
+        <fieldset>
+          <legend>Can we feature your challenge?</legend>
+          <label class="radio"><input type="radio" name="permission" value="name_location" required> Yes — you can use my first name and general location.</label>
+          <label class="radio"><input type="radio" name="permission" value="anonymous"> Yes — but keep me anonymous.</label>
+          <label class="radio"><input type="radio" name="permission" value="ask_first"> Maybe — ask me before you use anything.</label>
+          <label class="radio"><input type="radio" name="permission" value="private"> No — keep this private. I'd still like to know if you can help.</label>
+        </fieldset>
+
+        <label>Email address
+          <input name="email" type="email" required maxlength="160" placeholder="So we can get back to you">
+        </label>
+        <p class="form-note">We won't start filling your inbox with shite. If your challenge looks like something we can tackle, we'll get in touch.</p>
+
+        <button class="btn btn-primary btn-large" type="submit">THROW IT AT US →</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">GEN X GUIDE TO AI</div>
+    <p>No BS. Just progress.</p>
+    <a href="mailto:hello@genxguidetoai.com">hello@genxguidetoai.com</a>
+  </footer>
+</body>
+</html>
