@@ -13,15 +13,22 @@
   if (latest) {
     const number = `EPISODE ${latest.number}`;
     setText('latest-number', number);
-    setText('latest-video-number', number);
     setText('latest-title', latest.title);
-    setText('latest-video-title', latest.title);
     setText('latest-teaser', latest.teaser);
+
+    const watchUrl = latest.youtubeUrl ||
+      (latest.youtubeId ? `https://www.youtube.com/watch?v=${latest.youtubeId}` : 'https://www.youtube.com/@GenXGuideToAI');
 
     const link = document.getElementById('latest-youtube-link');
     if (link) {
-      link.href = latest.youtubeUrl || 'https://www.youtube.com/@GenXGuideToAI';
+      link.href = watchUrl;
       link.childNodes[0].nodeValue = `WATCH EPISODE ${latest.number} `;
+    }
+
+    const embed = document.getElementById('latest-youtube-embed');
+    if (embed && latest.youtubeId) {
+      embed.src = `https://www.youtube.com/embed/${encodeURIComponent(latest.youtubeId)}?rel=0`;
+      embed.title = `Episode ${latest.number} - ${latest.title}`;
     }
   }
 

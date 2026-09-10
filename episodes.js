@@ -3,7 +3,8 @@ window.GENX_EPISODES = {
     number: 1,
     title: "WHAT'S GPT UP TO?",
     teaser: "Walks in with a coffee, but he can't drink.",
-    youtubeUrl: "https://www.youtube.com/@GenXGuideToAI"
+    youtubeId: "uEfHPkljZjI",
+    youtubeUrl: "https://www.youtube.com/watch?v=uEfHPkljZjI"
   },
   next: {
     number: 2,

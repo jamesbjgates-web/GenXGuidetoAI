@@ -595,3 +595,19 @@ body {
   font-weight: 400;
   transform: rotate(-.35deg);
 }
+
+/* YouTube episode player: preserve the 16:9 master framing. */
+.youtube-embed {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border: 0;
+  background: #000;
+}
+
+@media (max-width: 800px) {
+  .youtube-embed {
+    min-height: 250px;
+  }
+}

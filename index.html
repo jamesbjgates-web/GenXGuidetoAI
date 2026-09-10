@@ -46,15 +46,16 @@
         <div class="episode-grid">
           <div class="video-card" aria-label="Latest YouTube episode">
             <div class="video-frame">
-              <div class="video-placeholder">
-                <div class="video-label">GEN X GUIDE TO AI</div>
-                <div class="video-copy">
-                  <span class="episode-number" id="latest-video-number">EPISODE 1</span>
-                  <strong id="latest-video-title">WHAT'S GPT UP TO?</strong>
-                </div>
-                <div class="play-button" aria-hidden="true">▶</div>
-                <span class="video-note">Latest YouTube episode</span>
-              </div>
+              <iframe
+                id="latest-youtube-embed"
+                class="youtube-embed"
+                src="https://www.youtube.com/embed/uEfHPkljZjI?rel=0"
+                title="Episode 1 - What's GPT Up To?"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
             </div>
           </div>
 

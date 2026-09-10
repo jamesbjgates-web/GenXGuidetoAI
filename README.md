@@ -21,3 +21,13 @@ Uses Barlow for body/interface text and Barlow Condensed for major display headi
 
 ## v4 typography test
 Social-card commentary and the Find Us aside now use a restrained marker-style treatment. Copy and links are unchanged.
+
+## Production bible
+
+Locked production rules are kept in `PRODUCTION-BIBLE.md`, including the 16:9 master / 9:16 social derivative rule.
+
+### v6
+- Keeps the standard 16:9 YouTube Episode 1 embed and direct episode watch link.
+- Restores/retains the v3-style Barlow Condensed treatment for the two major section headings.
+- Keeps the handwritten marker treatment for the Find Us aside and social-card comments.
+- No approved copy or social links changed.
