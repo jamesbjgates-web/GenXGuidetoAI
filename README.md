@@ -40,3 +40,12 @@ The current Episode 1 16:9 poster is embedded directly in `index.html` as a data
 
 ## v10 note
 The Who Are James + GPT artwork is embedded directly in index.html so the section does not depend on a separately served image asset. The PNG remains in the repository as the editable/source asset.
+
+
+## v14 - Challenge Us
+
+- Built directly from the approved v10 baseline.
+- Does not contain any v11/v12 responsive experiments or the rejected v13 concept.
+- Adds the approved Challenge Us artwork unchanged.
+- The artwork is embedded in `index.html` for reliable deployment and retained separately as `Challenge-Us-Master.png`.
+- The yellow “THROW YOUR CHALLENGE AT US” artwork button has an invisible accessible hotspot linking to `hello@genxguidetoai.com` with subject `Challenge Us`.
