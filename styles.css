@@ -22,7 +22,7 @@ html, body {
   width: 100%;
   min-height: 100%;
   background: var(--black);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -491,3 +491,4 @@ body {
 .coming-copy h3 {
   text-transform: uppercase;
 }
+\n\n/* Gen X Guide typography pass: editorial display + conversational body */\n.brand,\n.site-nav a,\n.section-kicker,\n.mini-label,\n.coming-label,\n.episode-number,\n.coming-copy > span,\n.primary-button,\n.social-card strong {\n  font-family: 'Barlow', Arial, Helvetica, sans-serif;\n}\n\n.section-heading-row h1,\n.episode-copy-card h2,\n.episode-title,\n.coming-copy h3,\n.social-section h2,\n.video-copy strong {\n  font-family: 'Barlow Condensed', 'Barlow', Arial, Helvetica, sans-serif;\n  font-weight: 900;\n  text-transform: uppercase;\n}\n\n.section-heading-row h1 {\n  font-size: clamp(42px, 6.2vw, 78px);\n  line-height: .86;\n  letter-spacing: -.8px;\n}\n\n.episode-copy-card h2 {\n  font-size: clamp(38px, 4.7vw, 58px);\n  letter-spacing: .1px;\n}\n\n.episode-title {\n  font-size: clamp(30px, 3.4vw, 43px);\n  line-height: .92;\n  letter-spacing: .1px;\n  margin: -2px 0 16px;\n}\n\n.coming-copy h3 {\n  font-size: 31px;\n  line-height: .95;\n  letter-spacing: .2px;\n}\n\n.social-section h2 {\n  font-size: clamp(40px, 5.2vw, 64px);\n  line-height: .9;\n  letter-spacing: 0;\n}\n\n.section-intro,\n.episode-copy-card p,\n.coming-copy p,\n.social-section > p,\n.social-card small {\n  font-family: 'Barlow', Arial, Helvetica, sans-serif;\n}\n\n.social-section > p {\n  font-size: 18px;\n  font-weight: 600;\n  font-style: italic;\n}\n\n.social-card small {\n  font-size: 15px;\n  font-weight: 600;\n}\n

@@ -13,3 +13,7 @@ This separation is intentional: the future automated production pipeline can upd
 
 ## Socials
 YouTube, Instagram, TikTok, Facebook, Threads and X use the confirmed GenXGuideToAI profile URLs.
+
+
+## v3 typography pass
+Uses Barlow for body/interface text and Barlow Condensed for major display headings. The existing humour and social copy are intentionally retained. Fonts are loaded from Google Fonts; no font files are included in this repository.
