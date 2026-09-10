@@ -773,21 +773,37 @@ body {
   border: 1px solid rgba(255,255,255,.12);
 }
 
-/* Functional email link over the address shown in the artwork. */
-.contact-email-hotspot {
+/* Functional links layered over the visible controls inside the locked contact artwork. */
+.contact-hotspot {
   position: absolute;
-  left: 35%;
-  top: 31%;
-  width: 31%;
-  height: 8%;
-  text-indent: -9999px;
+  display: block;
+  z-index: 20;
   overflow: hidden;
+  text-indent: -9999px;
+  cursor: pointer;
+  pointer-events: auto;
+  background: transparent;
 }
 
-.contact-email-hotspot:focus-visible {
+.contact-hotspot:focus-visible {
   outline: 3px solid #ffd400;
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
+
+/* Email address panel */
+.contact-email-hotspot { left: 35.8%; top: 32.2%; width: 30.4%; height: 7%; border-radius: 8px; }
+
+/* Social icons + labels along the bottom of the artwork */
+.contact-instagram { left: 40.6%; top: 87.6%; width: 5.2%; height: 6.7%; }
+.contact-youtube   { left: 45.5%; top: 87.6%; width: 5.2%; height: 6.7%; }
+.contact-tiktok    { left: 50.2%; top: 87.6%; width: 5.0%; height: 6.7%; }
+.contact-facebook  { left: 54.9%; top: 87.6%; width: 5.3%; height: 6.7%; }
+.contact-threads   { left: 59.5%; top: 87.6%; width: 5.2%; height: 6.7%; }
+.contact-x         { left: 64.1%; top: 87.6%; width: 3.9%; height: 6.7%; }
+
+/* Footer notices printed into the artwork */
+.contact-privacy { left: 51.0%; top: 94.2%; width: 6.1%; height: 3.9%; }
+.contact-affiliate-disclosure { left: 57.5%; top: 94.2%; width: 11.6%; height: 3.9%; }
 
 @media (max-width: 760px) {
   .section-copy-heading { margin-bottom: 18px; }
@@ -818,3 +834,8 @@ body {
 @media (max-width: 760px) {
   .tools-section { padding: 48px 0 56px; }
 }
+
+/* v22 legal footer */
+.site-legal-footer{border-top:1px solid rgba(255,255,255,.14);background:#090e13;color:#d9dde1;padding:24px 20px 30px;font-family:Arial,sans-serif;font-size:14px}
+.site-legal-inner{max-width:1320px;margin:0 auto;display:flex;gap:18px 28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.site-legal-footer nav{display:flex;gap:18px;flex-wrap:wrap}.site-legal-footer a{color:#ffd400;text-decoration:none}.site-legal-footer a:hover{text-decoration:underline}.site-operator{color:#aeb6bd}
