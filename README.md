@@ -1,23 +1,14 @@
-# Gen X Guide to AI — GitHub/cPanel package v16
+# Gen X Guide to AI — GitHub/cPanel package v19
 
-This package is ready to upload to the root of the GitHub repository used for genxguidetoai.com.
+This is the deployable build containing the new separation between genuine tools and affiliate relationships.
 
-## Files
-- `index.html` — latest approved v16 site
-- `styles.css` — current site styling
-- `Hero-Master.png` — current hero artwork
-- `.cpanel.yml` — cPanel Git deployment instructions
+## v19 changes
 
-## Deployment
-1. Replace the corresponding files in the repository root with these files.
-2. Commit the changes to the branch connected to cPanel.
-3. In cPanel Git Version Control, update from remote if needed and deploy the HEAD commit.
+- Main navigation now reads: **WATCH · CHALLENGE US · STUFF WE USE · AFFILIATES · ABOUT · CONTACT**.
+- **STUFF WE USE** links to the newly approved **Stuff We Actually Use** section.
+- The new section starts with **ChatGPT, HeyGen and ElevenLabs** and uses the approved artwork with James's corrected HeyGen likeness.
+- The existing locked affiliate artwork is retained unchanged in its own **AFFILIATES** section.
+- Removed the obsolete “Stuff We Actually Use” heading/byline from above the affiliate artwork so the two sections cannot be confused.
+- Updated `.cpanel.yml` to deploy the new `Stuff-We-Actually-Use.png` asset.
 
-The `.cpanel.yml` deploys `index.html`, `styles.css`, and `Hero-Master.png` to `/home/genxguidetoai/public_html/`.
-
-## Included approved copy
-- CHALLENGE US — “Come and have a go if you think you’re hard enough.”
-- STUFF WE ACTUALLY USE — “Cutting through the shite. This is the good stuff.”
-- COME AND SAY HELLO — “We don’t bite, honest. (Unless you ask really, really nicely.)”
-
-The page is deliberately mostly self-contained: the section artwork is embedded in `index.html`, while the hero remains an external file.
+Upload the contents of this folder to the root of the GitHub repository, replacing matching files, commit the changes, then deploy the HEAD commit in cPanel.
