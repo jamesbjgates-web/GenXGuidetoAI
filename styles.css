@@ -479,3 +479,15 @@ body {
     display: none;
   }
 }
+
+/* Gen X voice refinements */
+.episode-title {
+  font-size: clamp(25px, 3vw, 38px);
+  line-height: 1;
+  margin: -2px 0 14px;
+  letter-spacing: -.7px;
+}
+
+.coming-copy h3 {
+  text-transform: uppercase;
+}

@@ -1,20 +1,15 @@
 # Gen X Guide to AI
 
-Current website build for **Gen X Guide to AI**.
+Current website build for GitHub/cPanel deployment.
 
-## Files
+## Episode data
+`episodes.js` contains the current `latest` and `next` episode records. The page reads these values automatically via `site.js`.
 
-- `index.html` - homepage markup
-- `styles.css` - site styling and responsive layout
-- `Hero-Master.png` - homepage hero image
-- `.cpanel.yml` - cPanel Git deployment instructions
+This separation is intentional: the future automated production pipeline can update `episodes.js` (or replace it with generated JSON/API data) without rewriting the page layout.
 
-## Deployment
+## Current copy
+- Latest: Episode 1 — WHAT'S GPT UP TO? — “Walks in with a coffee, but he can't drink.”
+- Coming next: Episode 2 — GPT GETS VOCAL — “Now we get some answers.”
 
-This repository is configured for the existing cPanel Git deployment workflow. On deployment, the website files are copied to:
-
-`/home/genxguidetoai/public_html/`
-
-The current build includes the hero and the **Latest Episode / Coming Next / Find James + GPT in the Wild** section.
-
-The episode video and episode-specific copy are still draft placeholders pending final content approval.
+## Socials
+YouTube, Instagram, TikTok, Facebook, Threads and X use the confirmed GenXGuideToAI profile URLs.
