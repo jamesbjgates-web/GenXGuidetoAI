@@ -1,51 +1,23 @@
-# Gen X Guide to AI
+# Gen X Guide to AI — GitHub/cPanel package v16
 
-Current website build for GitHub/cPanel deployment.
+This package is ready to upload to the root of the GitHub repository used for genxguidetoai.com.
 
-## Episode data
-`episodes.js` contains the current `latest` and `next` episode records. The page reads these values automatically via `site.js`.
+## Files
+- `index.html` — latest approved v16 site
+- `styles.css` — current site styling
+- `Hero-Master.png` — current hero artwork
+- `.cpanel.yml` — cPanel Git deployment instructions
 
-This separation is intentional: the future automated production pipeline can update `episodes.js` (or replace it with generated JSON/API data) without rewriting the page layout.
+## Deployment
+1. Replace the corresponding files in the repository root with these files.
+2. Commit the changes to the branch connected to cPanel.
+3. In cPanel Git Version Control, update from remote if needed and deploy the HEAD commit.
 
-## Current copy
-- Latest: Episode 1 — WHAT'S GPT UP TO? — “Walks in with a coffee, but he can't drink.”
-- Coming next: Episode 2 — GPT GETS VOCAL — “Now we get some answers.”
+The `.cpanel.yml` deploys `index.html`, `styles.css`, and `Hero-Master.png` to `/home/genxguidetoai/public_html/`.
 
-## Socials
-YouTube, Instagram, TikTok, Facebook, Threads and X use the confirmed GenXGuideToAI profile URLs.
+## Included approved copy
+- CHALLENGE US — “Come and have a go if you think you’re hard enough.”
+- STUFF WE ACTUALLY USE — “Cutting through the shite. This is the good stuff.”
+- COME AND SAY HELLO — “We don’t bite, honest. (Unless you ask really, really nicely.)”
 
-
-## v3 typography pass
-Uses Barlow for body/interface text and Barlow Condensed for major display headings. The existing humour and social copy are intentionally retained. Fonts are loaded from Google Fonts; no font files are included in this repository.
-
-
-## v4 typography test
-Social-card commentary and the Find Us aside now use a restrained marker-style treatment. Copy and links are unchanged.
-
-## Production bible
-
-Locked production rules are kept in `PRODUCTION-BIBLE.md`, including the 16:9 master / 9:16 social derivative rule.
-
-### v6
-- Keeps the standard 16:9 YouTube Episode 1 embed and direct episode watch link.
-- Restores/retains the v3-style Barlow Condensed treatment for the two major section headings.
-- Keeps the handwritten marker treatment for the Find Us aside and social-card comments.
-- No approved copy or social links changed.
-
-
-## v8 poster reliability fix
-
-The current Episode 1 16:9 poster is embedded directly in `index.html` as a data URI, so it cannot disappear because a separate image asset failed to deploy. The whole poster remains linked to the standard YouTube watch URL. Future production automation can replace this with the newly generated 16:9 master/poster as part of each episode publish step.
-
-
-## v10 note
-The Who Are James + GPT artwork is embedded directly in index.html so the section does not depend on a separately served image asset. The PNG remains in the repository as the editable/source asset.
-
-
-## v14 - Challenge Us
-
-- Built directly from the approved v10 baseline.
-- Does not contain any v11/v12 responsive experiments or the rejected v13 concept.
-- Adds the approved Challenge Us artwork unchanged.
-- The artwork is embedded in `index.html` for reliable deployment and retained separately as `Challenge-Us-Master.png`.
-- The yellow “THROW YOUR CHALLENGE AT US” artwork button has an invisible accessible hotspot linking to `hello@genxguidetoai.com` with subject `Challenge Us`.
+The page is deliberately mostly self-contained: the section artwork is embedded in `index.html`, while the hero remains an external file.
