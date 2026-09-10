@@ -17,3 +17,7 @@ YouTube, Instagram, TikTok, Facebook, Threads and X use the confirmed GenXGuideT
 
 ## v3 typography pass
 Uses Barlow for body/interface text and Barlow Condensed for major display headings. The existing humour and social copy are intentionally retained. Fonts are loaded from Google Fonts; no font files are included in this repository.
+
+
+## v4 typography test
+Social-card commentary and the Find Us aside now use a restrained marker-style treatment. Copy and links are unchanged.

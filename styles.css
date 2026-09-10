@@ -491,4 +491,107 @@ body {
 .coming-copy h3 {
   text-transform: uppercase;
 }
-\n\n/* Gen X Guide typography pass: editorial display + conversational body */\n.brand,\n.site-nav a,\n.section-kicker,\n.mini-label,\n.coming-label,\n.episode-number,\n.coming-copy > span,\n.primary-button,\n.social-card strong {\n  font-family: 'Barlow', Arial, Helvetica, sans-serif;\n}\n\n.section-heading-row h1,\n.episode-copy-card h2,\n.episode-title,\n.coming-copy h3,\n.social-section h2,\n.video-copy strong {\n  font-family: 'Barlow Condensed', 'Barlow', Arial, Helvetica, sans-serif;\n  font-weight: 900;\n  text-transform: uppercase;\n}\n\n.section-heading-row h1 {\n  font-size: clamp(42px, 6.2vw, 78px);\n  line-height: .86;\n  letter-spacing: -.8px;\n}\n\n.episode-copy-card h2 {\n  font-size: clamp(38px, 4.7vw, 58px);\n  letter-spacing: .1px;\n}\n\n.episode-title {\n  font-size: clamp(30px, 3.4vw, 43px);\n  line-height: .92;\n  letter-spacing: .1px;\n  margin: -2px 0 16px;\n}\n\n.coming-copy h3 {\n  font-size: 31px;\n  line-height: .95;\n  letter-spacing: .2px;\n}\n\n.social-section h2 {\n  font-size: clamp(40px, 5.2vw, 64px);\n  line-height: .9;\n  letter-spacing: 0;\n}\n\n.section-intro,\n.episode-copy-card p,\n.coming-copy p,\n.social-section > p,\n.social-card small {\n  font-family: 'Barlow', Arial, Helvetica, sans-serif;\n}\n\n.social-section > p {\n  font-size: 18px;\n  font-weight: 600;\n  font-style: italic;\n}\n\n.social-card small {\n  font-size: 15px;\n  font-weight: 600;\n}\n
+
+
+/* Gen X Guide typography pass: editorial display + conversational body */
+.brand,
+.site-nav a,
+.section-kicker,
+.mini-label,
+.coming-label,
+.episode-number,
+.coming-copy > span,
+.primary-button,
+.social-card strong {
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
+}
+
+.section-heading-row h1,
+.episode-copy-card h2,
+.episode-title,
+.coming-copy h3,
+.social-section h2,
+.video-copy strong {
+  font-family: 'Barlow Condensed', 'Barlow', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section-heading-row h1 {
+  font-size: clamp(42px, 6.2vw, 78px);
+  line-height: .86;
+  letter-spacing: -.8px;
+}
+
+.episode-copy-card h2 {
+  font-size: clamp(38px, 4.7vw, 58px);
+  letter-spacing: .1px;
+}
+
+.episode-title {
+  font-size: clamp(30px, 3.4vw, 43px);
+  line-height: .92;
+  letter-spacing: .1px;
+  margin: -2px 0 16px;
+}
+
+.coming-copy h3 {
+  font-size: 31px;
+  line-height: .95;
+  letter-spacing: .2px;
+}
+
+.social-section h2 {
+  font-size: clamp(40px, 5.2vw, 64px);
+  line-height: .9;
+  letter-spacing: 0;
+}
+
+.section-intro,
+.episode-copy-card p,
+.coming-copy p,
+.social-section > p,
+.social-card small {
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
+}
+
+.social-section > p {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.social-card small {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+/* Social cards: structured label, scribbled commentary */
+.social-card strong {
+  font-family: 'Barlow Condensed', 'Barlow', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: .7px;
+}
+
+.social-card small {
+  font-family: 'Permanent Marker', 'Comic Sans MS', cursive;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: .05px;
+  transform: rotate(-0.5deg);
+  max-width: 150px;
+}
+
+.social-card:nth-child(even) small {
+  transform: rotate(.45deg);
+}
+
+.social-section > p {
+  font-family: 'Permanent Marker', 'Comic Sans MS', cursive;
+  font-style: normal;
+  font-weight: 400;
+  transform: rotate(-.35deg);
+}
