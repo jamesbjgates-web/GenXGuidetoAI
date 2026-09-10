@@ -40,3 +40,5 @@ The current Episode 1 16:9 poster is embedded directly in `index.html` as a data
 
 ## v10 note
 The Who Are James + GPT artwork is embedded directly in index.html so the section does not depend on a separately served image asset. The PNG remains in the repository as the editable/source asset.
+
+- v11: mobile About artwork remains readable via touch-friendly horizontal scroll rather than shrinking the full landscape poster to phone width.
