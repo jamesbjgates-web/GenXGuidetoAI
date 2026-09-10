@@ -11,8 +11,54 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  color: #fff;
+}
+
+.site-header {
+  width: 100%;
+  min-height: 58px;
+  background: #090909;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 28px;
+}
+
+.brand {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  white-space: nowrap;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 28px;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  padding: 18px 0 16px;
+  border-bottom: 3px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: #f4d03f;
+  border-bottom-color: #f4d03f;
+}
+
 .hero {
-  position: relative;
   width: 100%;
   background: #000;
 }
@@ -21,63 +67,30 @@ html, body {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
 }
 
-.hero-nav {
-  position: absolute;
-  top: 22px;
-  right: 34px;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
+@media (max-width: 800px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 14px 18px 12px;
+    gap: 10px;
+  }
 
-.hero-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  padding: 7px 0;
-  border-bottom: 2px solid transparent;
-  text-shadow: 0 2px 5px rgba(0,0,0,.85);
-  transition: color .2s ease, border-color .2s ease;
-}
+  .brand {
+    font-size: 15px;
+  }
 
-.hero-nav a:hover,
-.hero-nav a:focus-visible {
-  color: #f4d03f;
-  border-bottom-color: #f4d03f;
-}
-
-@media (max-width: 900px) {
-  .hero-nav {
-    top: 14px;
-    right: 18px;
-    left: 18px;
-    justify-content: flex-end;
+  .site-nav {
+    width: 100%;
+    justify-content: flex-start;
     gap: 16px;
     flex-wrap: wrap;
   }
 
-  .hero-nav a {
+  .site-nav a {
     font-size: 11px;
-    letter-spacing: .9px;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-nav {
-    position: static;
-    background: #0b0b0b;
-    padding: 12px 16px;
-    justify-content: center;
-  }
-
-  .hero-image {
-    width: 100%;
-    height: auto;
+    letter-spacing: .85px;
+    padding: 4px 0 7px;
   }
 }
