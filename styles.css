@@ -693,3 +693,38 @@ body {
 }
 
 /* The standalone 'Latest Episode' kicker and old horizontal Coming Next strip are no longer used in v7. */
+
+/* v9 — Who Are James + GPT? */
+.about-section {
+  padding: 72px 0 84px;
+  background: #0b0d0f;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.about-heading {
+  margin-bottom: 24px;
+}
+
+.about-heading h2 {
+  margin: 0;
+  font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+  font-size: clamp(48px, 6vw, 82px);
+  font-weight: 900;
+  line-height: .94;
+  letter-spacing: -.8px;
+}
+
+.about-heading p {
+  margin: 12px 0 0;
+  font-family: 'Permanent Marker', 'Comic Sans MS', cursive;
+  font-size: clamp(15px, 1.5vw, 20px);
+  line-height: 1.35;
+  transform: rotate(-.25deg);
+}
+
+.about-duo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(255,255,255,.18);
+}
