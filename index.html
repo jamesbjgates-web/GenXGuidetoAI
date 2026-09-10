@@ -35,7 +35,6 @@
 
     <section class="watch-section" id="watch">
       <div class="section-shell">
-        <div class="section-kicker">LATEST EPISODE</div>
         <div class="section-heading-row">
           <div>
             <h1>WHAT HAVE WE BEEN UP TO?</h1>
@@ -44,38 +43,31 @@
         </div>
 
         <div class="episode-grid">
-          <div class="video-card" aria-label="Latest YouTube episode">
+          <a
+            class="video-card episode-link-card"
+            id="latest-youtube-visual-link"
+            href="https://www.youtube.com/watch?v=uEfHPkljZjI"
+            target="_blank"
+            rel="noopener"
+            aria-label="Watch Episode 1 on YouTube">
             <div class="video-frame">
-              <iframe
-                id="latest-youtube-embed"
-                class="youtube-embed"
-                src="https://www.youtube.com/embed/uEfHPkljZjI?rel=0"
-                title="Episode 1 - What's GPT Up To?"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-              </iframe>
+              <img
+                id="latest-episode-poster"
+                class="episode-poster"
+                src="Episode1-Master-Frame.jpg"
+                alt="Episode 1 - What's GPT Up To?">
+              <span class="episode-play-button" aria-hidden="true">▶</span>
+              <span class="episode-watch-note">WATCH ON YOUTUBE</span>
             </div>
-          </div>
+          </a>
 
-          <article class="episode-copy-card">
-            <span class="mini-label">LATEST EPISODE</span>
-            <h2 id="latest-number">EPISODE 1</h2>
-            <h3 class="episode-title" id="latest-title">WHAT'S GPT UP TO?</h3>
-            <p class="episode-lead" id="latest-teaser">Walks in with a coffee, but he can't drink.</p>
-            <a class="primary-button" id="latest-youtube-link" href="https://www.youtube.com/@GenXGuideToAI" target="_blank" rel="noopener">WATCH EPISODE 1 <span>↗</span></a>
+          <article class="episode-copy-card next-episode-card">
+            <span class="mini-label">COMING NEXT</span>
+            <h2 id="next-number">EPISODE 2</h2>
+            <h3 class="episode-title" id="next-title">GPT GETS VOCAL</h3>
+            <p class="episode-lead" id="next-teaser">Now we get some answers.</p>
           </article>
         </div>
-
-        <aside class="coming-next">
-          <div class="coming-label">COMING NEXT</div>
-          <div class="coming-copy">
-            <span id="next-number">EPISODE 2</span>
-            <h3 id="next-title">GPT GETS VOCAL</h3>
-            <p id="next-teaser">Now we get some answers.</p>
-          </div>
-        </aside>
 
         <div class="social-section">
           <h2>FIND JAMES + GPT IN THE WILD</h2>

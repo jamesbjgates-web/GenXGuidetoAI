@@ -11,24 +11,19 @@
   const next = data.next;
 
   if (latest) {
-    const number = `EPISODE ${latest.number}`;
-    setText('latest-number', number);
-    setText('latest-title', latest.title);
-    setText('latest-teaser', latest.teaser);
-
     const watchUrl = latest.youtubeUrl ||
       (latest.youtubeId ? `https://www.youtube.com/watch?v=${latest.youtubeId}` : 'https://www.youtube.com/@GenXGuideToAI');
 
-    const link = document.getElementById('latest-youtube-link');
-    if (link) {
-      link.href = watchUrl;
-      link.childNodes[0].nodeValue = `WATCH EPISODE ${latest.number} `;
+    const visualLink = document.getElementById('latest-youtube-visual-link');
+    if (visualLink) {
+      visualLink.href = watchUrl;
+      visualLink.setAttribute('aria-label', `Watch Episode ${latest.number} on YouTube`);
     }
 
-    const embed = document.getElementById('latest-youtube-embed');
-    if (embed && latest.youtubeId) {
-      embed.src = `https://www.youtube.com/embed/${encodeURIComponent(latest.youtubeId)}?rel=0`;
-      embed.title = `Episode ${latest.number} - ${latest.title}`;
+    const poster = document.getElementById('latest-episode-poster');
+    if (poster) {
+      poster.alt = `Episode ${latest.number} - ${latest.title}`;
+      if (latest.poster) poster.src = latest.poster;
     }
   }
 

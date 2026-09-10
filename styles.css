@@ -611,3 +611,85 @@ body {
     min-height: 250px;
   }
 }
+
+/* v7 episode layout: clean 16:9 master visual + coming-next card */
+.episode-link-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.episode-link-card .video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+
+.episode-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .25s ease, filter .25s ease;
+}
+
+.episode-link-card:hover .episode-poster,
+.episode-link-card:focus-visible .episode-poster {
+  transform: scale(1.015);
+  filter: brightness(.88);
+}
+
+.episode-play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 88px;
+  height: 62px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  padding-left: 4px;
+  background: #ff0033;
+  color: #fff;
+  font-size: 27px;
+  box-shadow: 0 14px 34px rgba(0,0,0,.42);
+}
+
+.episode-watch-note {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  padding: 7px 10px;
+  background: rgba(0,0,0,.72);
+  color: #fff;
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .8px;
+}
+
+.next-episode-card {
+  justify-content: center;
+  background:
+    linear-gradient(140deg, rgba(244,208,63,.07), transparent 38%),
+    rgba(17,20,23,.96);
+}
+
+.next-episode-card .mini-label {
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid var(--yellow);
+  padding: 8px 10px;
+  margin-bottom: 11px;
+}
+
+.next-episode-card h2 {
+  margin-top: 0;
+}
+
+/* The standalone 'Latest Episode' kicker and old horizontal Coming Next strip are no longer used in v7. */
