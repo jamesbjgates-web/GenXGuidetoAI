@@ -4,4 +4,8 @@ deployment:
     - export DEPLOYPATH=/home/genxguidetoai/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp styles.css $DEPLOYPATH
+    - /bin/cp episodes.js $DEPLOYPATH
+    - /bin/cp site.js $DEPLOYPATH
     - /bin/cp Hero-Master.png $DEPLOYPATH
+    - /bin/cp Episode1-Master-Frame.jpg $DEPLOYPATH
+    - /bin/cp James-GPT-About.png $DEPLOYPATH

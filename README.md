@@ -36,3 +36,7 @@ Locked production rules are kept in `PRODUCTION-BIBLE.md`, including the 16:9 ma
 ## v8 poster reliability fix
 
 The current Episode 1 16:9 poster is embedded directly in `index.html` as a data URI, so it cannot disappear because a separate image asset failed to deploy. The whole poster remains linked to the standard YouTube watch URL. Future production automation can replace this with the newly generated 16:9 master/poster as part of each episode publish step.
+
+
+## v10 note
+The Who Are James + GPT artwork is embedded directly in index.html so the section does not depend on a separately served image asset. The PNG remains in the repository as the editable/source asset.
