@@ -23,7 +23,6 @@
     const poster = document.getElementById('latest-episode-poster');
     if (poster) {
       poster.alt = `Episode ${latest.number} - ${latest.title}`;
-      if (latest.poster) poster.src = latest.poster;
     }
   }
 

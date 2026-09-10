@@ -31,3 +31,8 @@ Locked production rules are kept in `PRODUCTION-BIBLE.md`, including the 16:9 ma
 - Restores/retains the v3-style Barlow Condensed treatment for the two major section headings.
 - Keeps the handwritten marker treatment for the Find Us aside and social-card comments.
 - No approved copy or social links changed.
+
+
+## v8 poster reliability fix
+
+The current Episode 1 16:9 poster is embedded directly in `index.html` as a data URI, so it cannot disappear because a separate image asset failed to deploy. The whole poster remains linked to the standard YouTube watch URL. Future production automation can replace this with the newly generated 16:9 master/poster as part of each episode publish step.
